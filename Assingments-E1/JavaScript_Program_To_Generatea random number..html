@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .adding{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    .first, .second{
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+
+    }
+    .result{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 1rem;
+
+
+    }
+
+</style>
+<body>
+    <div id="Ramdom"></div>
+        <button id="randomNumbers" onclick="randomFunction()">Click here</button>
+    <div id="result"></div>
+    
+
+    <script>
+      
+        // document.write("Hello World");
+        document.getElementById('Ramdom').innerHTML = "Click here to get the Random Numbers";
+        function randomFunction(){
+            
+           var result=parseInt (document.getElementById('result').innerHTML =  Math.floor((Math.random() * 1000) ));
+        
+         console.log(result);
+         
+    }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .adding{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    .first, .second{
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+
+    }
+    .result{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 1rem;
+
+
+    }
+
+</style>
+<body>
+    <div class="adding">
+    <div id="title"></div>
+    <div class="first">
+    <label> Enter the First Numbers : </label>
+    <input type="text" id="a" required>
+</div>
+<div class="second">
+    <label> Enter the Second Numbers : </label>
+    <input type="text" id="b" required>
+   </div>
+<div  class="result">
+    <input  type="button" value="Display result" onclick="add_numbers()">
+    <br/>
+    <span id="sum"></span>
+    </input>
+</div>
+</div>
+    <script>
+      
+        // document.write("Hello World");
+        document.getElementById('title').innerHTML = "Adding Two Numbers";
+        function add_numbers(){
+        
+         var firstNumber =parseInt (document.getElementById("a").value);
+         var secondNumber =parseInt( document.getElementById("b").value);
+         var result=firstNumber+secondNumber;
+         console.log("The First Number is : " + firstNumber);
+         console.log("The Second Number is : " + secondNumber);
+       
+        console.log(result);
+         document.getElementById("sum").innerHTML= result;
+         
+    }
+    </script>
+    
+</body>
+</html>
