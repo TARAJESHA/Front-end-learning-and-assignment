@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document
+
+
+    </title>
+</head>
+
+<script>
+// ---------------adding a key and value to localStorage and retrieving back by the key--------------------
+window.localStorage.setItem("key", 8);
+var x=window.localStorage.getItem("key");
+console.log(x);
+// --------------------------------------------------------------------------------------------------------
+    const object = {
+        name: "Raj",
+        age: 23,
+        gender: "male",
+        profession: "Software"
+    }
+    window.localStorage.setItem("object",JSON.stringify(object));
+    let newObject = window.localStorage.getItem("object");
+    console.log(JSON.parse(newObject));
+
+</script>
+
+
+<body>
+</body>
+
+</html>
