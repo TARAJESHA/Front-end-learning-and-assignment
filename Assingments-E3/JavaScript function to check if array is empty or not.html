@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript function to check if array is empty or not</h1>
+    <h2 id="myarray"></h2>
+    
+    <button onclick="myFunction()">Click me</button>
+    <div id="result"></div>
+    <script>
+         var myArray=[2, 4, 6];
+          document.getElementById("myarray").innerHTML = "[ "+myArray + " ]";
+        function myFunction() {
+           
+
+        if(myArray.length == 0){
+            var result="Array is Empty";
+        }
+        else{
+            var result="Array is Not Empty";
+        }
+        console.log(myArray.length);
+      
+        document.getElementById("result").innerHTML = result;
+    
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
