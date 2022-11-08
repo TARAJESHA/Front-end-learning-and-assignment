@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Check whether a string starts and ends with certain characters</h1>
+    <h2 id="myarray"></h2>
+
+    <script>
+      
+
+        function checkString(str) {
+            var c = str.charAt(0);
+            let lenght=str.length;
+            console.log("lenght :"+lenght)
+            var startingLetter = str.charAt(0);
+            var endingLetter = str.charAt(lenght-1);
+
+         
+                if (startingLetter >= 'A' && endingLetter >= 'A' || startingLetter >= 'a' && endingLetter >= 'a') { 
+                    console.log('The string starts with Charecter and ends with Charecter');
+                    document.getElementById('myarray').innerHTML="The string starts with Charecter and ends with Charecter";
+                 }
+                 else{
+                    console.log('The string does not starts with Charecter and ends with Charecter');
+                    document.getElementById('myarray').innerHTML="The string does not starts with Charecter and ends with Charecter";
+                 }
+
+        }
+
+
+        // take input
+        let string = prompt('Enter a string: ');
+        checkString(string);
+
+
+
+
+    </script>
+
+</body>
+
+</html>

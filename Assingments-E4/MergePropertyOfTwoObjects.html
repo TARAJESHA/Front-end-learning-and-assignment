@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Merge property of Two objects</h1>
+    Display object1 properties:
+    <h3 id="obj1"></h3>
+    <br/>
+    Display object2 properties:
+    <h3 id="obj2"></h3>
+
+    After Mergeing the output should be
+    <h3 id="result"></h3>
+
+    <script>
+        
+        var job = { 
+            jobTitle: 'Full Stack Developer',
+            location: 'INDIA' 
+        }
+            document.getElementById("obj1").innerHTML = "JobTitle : " + job.jobTitle + ", "+ "Location : "+job.location
+        var person = { 
+            firstName: 'Rajesh',
+            lastName: 'T A',
+            age: 23,
+        }
+        document.getElementById("obj2").innerHTML = "Name : " + person.firstName + person.lastName + ", "+ "Age : "+person.age
+        var employee = {
+         ...person,
+         ...job
+        };
+        
+        console.log(employee);
+        document.getElementById("result").innerHTML ="Name : " + person.firstName + person.lastName + ", "+ "Age : "+person.age+ ", "+ "JobTitle : " + job.jobTitle + ", "+ "Location : "+job.location
+
+    </script>
+
+</body>
+
+</html>
